@@ -199,7 +199,7 @@ Bowtie2 also provides (via stderr) a summary of the mapping results, including c
 
 #### Mitochondrial reads
 
-It is a well-known problem that ATAC-seq datasets usually contain a large percentage of reads that is derived from mitochondrial DNA (for example, see [this discussion](http://seqanswers.com/forums/showthread.php?t=35318)).  Some have gone as far as [using CRISPR to reduce mitochondrial contamination](https://www.nature.com/articles/s41598-017-02547-w).  The recently published [Omni-ATAC method](https://www.nature.com/articles/nmeth.4396) uses detergents to remove mitochondria and is likely to be more accessible for most researchers (but, [do **not** follow their computational workflow](https://www.biorxiv.org/content/early/2018/12/17/496521)).
+It is a well-known problem that ATAC-seq datasets usually contain a large percentage of reads that are derived from mitochondrial DNA (for example, see [this discussion](http://seqanswers.com/forums/showthread.php?t=35318)).  Some have gone as far as [using CRISPR to reduce mitochondrial contamination](https://www.nature.com/articles/s41598-017-02547-w).  The recently published [Omni-ATAC method](https://www.nature.com/articles/nmeth.4396) uses detergents to remove mitochondria and is likely to be more accessible for most researchers (but, [do **not** follow their computational workflow](https://www.biorxiv.org/content/early/2018/12/17/496521)).
 
 Regardless of your lab protocol, you will have some mitochondrial reads in your sequence data.  Since there are no ATAC-seq peaks of interest in the mitochondrial genome, these reads will only complicate the subsequent steps.  Therefore, we recommend that they be removed from further analysis, via one of the following methods:
 
